@@ -22,7 +22,16 @@ connection.once('open', async () => {
 
     users = await User.collection.insertMany(userData);
 
-    thoughts = await Thought.collection.insertMany(thoughtsData);
+    for (let thoughtData of thoughtsData) {
+        const thought = await Thought.create(thoughtData);
+        const user = await User.findOneAndUpdate(
+            { username: thoughtData.username },
+            { $push: { thoughts: thought._id } },
+            { new: true }
+        );
+        thoughts.push(thought);
+    }
+    // thoughts = await Thought.collection.insertMany(thoughtsData);
 
     console.table(users);
     console.table(thoughts);
