@@ -116,3 +116,32 @@ const techCourseReactions = [
 getRandomValue = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 // Assign a random user to each thought
+const thoughtsData = [];
+techCourseThoughts.forEach(thought => {
+    const randomUser = getRandomValue(userData);
+    const newThought = {
+        thoughtText: thought.thoughtText,
+        username: randomUser.username
+    };
+    thoughtsData.push(newThought);
+});
+
+random0to4 = () => Math.floor(Math.random() * 5);
+
+// Assign a random reaction to each thought
+const generateReaction = () => {
+    const reactionData = [];
+    for(let i = 0; i < random0to4(); i++) {
+        const randomUser = getRandomValue(userData);
+        reactionData.push({
+            reactionBody: getRandomValue(techCourseReactions).reactionBody,
+            username: randomUser.username
+        });
+
+    }
+    return reactionData;
+}
+
+
+
+module.exports = { userData, thoughtsData, random0to4, generateReaction };
