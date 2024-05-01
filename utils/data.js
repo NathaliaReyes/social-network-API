@@ -126,7 +126,7 @@ techCourseThoughts.forEach(thought => {
     thoughtsData.push(newThought);
 });
 
-random0to4 = () => Math.floor(Math.random() * 5);
+random0to4 = () => Math.floor(Math.random() * 5) + 1;
 
 // Assign a random reaction to each thought
 const generateReaction = () => {
@@ -143,7 +143,8 @@ const generateReaction = () => {
 }
 
 console.log(userData);
-console.log(thoughtsData);
+console.log(thoughtsData); // Logs the thoughtText and username
+console.log(generateReaction());
 
 
 
