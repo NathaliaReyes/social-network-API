@@ -66,27 +66,28 @@ const userData = [
 
 // Data for thoughts on random tech courses
 const techCourseThoughts = [
-    { thoughtText: "Harvard'iew of key concepts like algorith" },
-    { thoughtText: "Courseracs such as supervised learning, " },
-    { thoughtText: "Udacity'owing students to master AI cg." },
-    { thoughtText: "MIT's Inming principles and advance" },
-    { thoughtText: "Google'sce, with hands-on labs a." },
-    { thoughtText: "edX's Migies like Hadoop and S." },
-    { thoughtText: "Stanfordser interface desig" },
-    { thoughtText: "DataCampa manipulation, ." },
-    { thoughtText: "Udemy's es and web applications from scratch." },
-    { thoughtText: "Pluralsiical labs and simulations " },
-    { thoughtText: "IBM's Daand case studies to apply concepts in practical scenarios." },
-    { thoughtText: "Amazon Wt exahitecture design principles, and best practices." },
-    { thoughtText: "Unity's th Unity game engine, with lish games for various platforms." },
-    { thoughtText: "LinkedInns, and object-oriented programmimples and exercises." },
-    { thoughtText: "React Nar navigation, with real-world ase skills to employers." },
-    { thoughtText: "Cisco Ne, switching, and network secursing Cisco equipment." },
-    { thoughtText: "Full Sta.js, MongoDB, and React, with pros." },
-    { thoughtText: "Blockcharrencies, with case studies anapplications." },
-    { thoughtText: "Deep Leaorks, recurrent networks, ang assignments in Python using TensorFlow." },
-    { thoughtText: "Microsofl machines, storage, netw-on labs to practice Azure skills." }
+    { thoughtText: "Harvard's CS50: Intro to Computer Science is a great start." },
+    { thoughtText: "Coursera's Machine Learning by Andrew Ng is a deep dive." },
+    { thoughtText: "Udacity's Nanodegree in AI offers hands-on projects." },
+    { thoughtText: "MIT's Intro to CS covers fundamental principles." },
+    { thoughtText: "Google's IT Cert provides a solid foundation." },
+    { thoughtText: "edX's Data Science covers analytics and ML." },
+    { thoughtText: "Stanford's iOS Dev teaches app building." },
+    { thoughtText: "DataCamp's Data Science Track is interactive." },
+    { thoughtText: "Udemy's Web Dev Bootcamp covers full-stack." },
+    { thoughtText: "Pluralsight's Cybersecurity Path prepares for careers." },
+    { thoughtText: "IBM's Data Science Cert is hands-on." },
+    { thoughtText: "AWS Solutions Architect training is comprehensive." },
+    { thoughtText: "Unity Learn Platform offers game dev tutorials." },
+    { thoughtText: "LinkedIn's Python Training covers fundamentals." },
+    { thoughtText: "React Nanodegree teaches modern web apps." },
+    { thoughtText: "Cisco CCNA course provides networking overview." },
+    { thoughtText: "Full Stack Web Dev Bootcamp covers HTML to React." },
+    { thoughtText: "Blockchain Basics introduces decentralized tech." },
+    { thoughtText: "Deep Learning Spec covers neural networks." },
+    { thoughtText: "Azure Fundamentals course is beginner-friendly." }
 ];
+
 
 // Data for reactions to the tech course thoughts
 const techCourseReactions = [
