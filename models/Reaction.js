@@ -19,8 +19,14 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: (createdAtVal) => dateFormat(createdAtVal),
+            // Add getter method to format the timestamp on query
         },
+    },
+    {
+        toJSON: {
+            getters: true,
+        },
+        id: false,
     }
 
     
