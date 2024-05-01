@@ -142,6 +142,9 @@ const generateReaction = () => {
     return reactionData;
 }
 
+console.log(userData);
+console.log(thoughtsData);
+
 
 
 module.exports = { userData, thoughtsData, random0to4, generateReaction };

@@ -1,6 +1,6 @@
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
-const userData = require('./userData.json');
+const { userData, thoughtsData } = require('./data');
 
 connection.on('open', (err) => err);
 
@@ -17,6 +17,15 @@ connection.once('open', async () => {
         await connection.dropCollection('thoughts');
     }
 
-    const users = [];
-    
+    let users = [];
+    let thoughts = [];
+
+    users = await User.collection.insertMany(userData);
+
+    thoughts = await Thought.collection.insertMany(thoughtsData);
+
+    console.table(users);
+    console.table(thoughts);
+    console.info('Seeding complete! 🌱');
+    process.exit(0);
 });
