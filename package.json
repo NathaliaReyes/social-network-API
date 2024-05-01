@@ -12,7 +12,8 @@
     "dependencies": {
       "express": "^4.17.1",
       "mongoose": "^7.0.2",
-      "dayjs": "1.11.11"
+      "dayjs": "1.11.11",
+      "mongodb": "^6.5.0"
     },
     "devDependencies": {
       "nodemon": "^2.0.9"

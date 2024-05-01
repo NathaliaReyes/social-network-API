@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-// const assignmentSchema = require('./Assignment');
+const Thought = require('./Thought');
 
 // Function to validate email
 var validateEmail = function(email) {
