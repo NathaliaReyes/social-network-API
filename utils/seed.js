@@ -1,6 +1,6 @@
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
-const { userData, thoughtsData } = require('./data');
+const { userData, thoughtsData, generateReaction } = require('./data');
 
 connection.on('open', (err) => err);
 
@@ -23,6 +23,7 @@ connection.once('open', async () => {
     users = await User.collection.insertMany(userData);
 
     for (let thoughtData of thoughtsData) {
+        thoughtData.reactions = generateReaction();
         const thought = await Thought.create(thoughtData);
         const user = await User.findOneAndUpdate(
             { username: thoughtData.username },

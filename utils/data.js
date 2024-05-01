@@ -140,6 +140,7 @@ const generateReaction = () => {
         });
 
     }
+    console.log('Generated reactions: ', reactionData);
     return reactionData;
 }
 
