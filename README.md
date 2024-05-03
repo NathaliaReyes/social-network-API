@@ -2,7 +2,7 @@
 Project related to mongoDB and mongoose.
 
 ## Description
-This project, titled "Social-Network-API", is a backend application built with Express.js, and MongoDB and Mongoose ODM. It's designed to provide API endpoints for a social networking web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+This project, titled "Social-Network-API", is a backend application built with Express.js, and MongoDB, a NoSQL database. The use of MongoDB allows the application to efficiently handle large amounts of unstructured data, making it ideal for a social networking web application. The application also uses Mongoose ODM for powerful data modeling and schema enforcement. It's designed to provide API endpoints where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
 [![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
